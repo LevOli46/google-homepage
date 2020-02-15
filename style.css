@@ -11,13 +11,10 @@
     margin-bottom: 20px;;
 }
 
-a:hover {
-    box-shadow: lightgreen;
-}
 .search_bar {
     display: grid;
     grid-template-columns: auto 20px 400px auto;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 40% 60%;
     padding: 10px;
 }
 
@@ -36,6 +33,7 @@ a:hover {
 .input {
     grid-column: 2 / span 2;
     grid-row: 2;
+    border-radius: 20px;
 }
 
 .button {
@@ -44,8 +42,20 @@ a:hover {
     padding-top: 20px;
 }
 
-.button:hover {
-    border-collapse: collapse;
+.button_color {
+    background-color: #f4f4f4;
+    color: #616161;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: none;
+    border-style: solid;
+    border-color: transparent;
+    margin: 10px;
+}
+
+.button_color:hover {
+    border-color: rgb(185, 184, 184);
+    border-style: ridge;
 }
 
 footer {
@@ -61,7 +71,29 @@ li {
     padding-inline: 5px;
     font-size: 13px;
 }
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+a {
+    color: black;
+    text-decoration: unset;
+}
+li:hover {
+    text-decoration: underline;
+}
+
+#google_menu:hover {
+    background-color: black;
+}
 
 .right_items {
     float: right;
+}
+
+.Sign_in {
+    background-color: #4386fa;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
